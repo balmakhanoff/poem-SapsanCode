@@ -1,0 +1,67 @@
+@import 'vars';
+@import 'mixin';
+
+body {
+
+    background-color: $bgcolor;
+}
+
+.wrapper {
+
+    max-width: 1024px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+    border: 1px double rgb(162, 126, 126);  
+    @extend %paddings;
+    background-color: white;
+    box-shadow: 1px 1px 3px 3px rgb(0, 0, 0, 0.5);
+    
+}
+
+header {
+
+    text-align: center;
+
+    h1 {
+        @include text-conteiner($bgcolor);
+
+        @extend %paddings;
+        @extend %margins;
+    }
+
+    figure {
+        @extend %margins;
+
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+
+h3 {
+
+    display: inline-block;
+    background-color: $bgcolor;
+    @extend %paddings;
+
+}
+
+.dedication-of-poem,
+.first-song-of-poem {
+    
+    @extend %paddings;
+
+}
+
+
+@media screen and (max-width: 773px) {
+
+    .wrapper{
+        display: block;
+        text-align: center;
+    }
+
+}

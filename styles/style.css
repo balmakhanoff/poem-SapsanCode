@@ -1,0 +1,46 @@
+.dedication-of-poem,
+.first-song-of-poem, h3, header h1, .wrapper {
+  padding: 15px;
+}
+
+header figure, header h1 {
+  margin: 30px;
+}
+
+body {
+  background-color: rgb(235, 225, 207);
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  border: 1px double rgb(162, 126, 126);
+  background-color: white;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  background-color: rgb(235, 225, 207);
+}
+header figure img {
+  width: 100%;
+}
+
+h3 {
+  display: inline-block;
+  background-color: rgb(235, 225, 207);
+}
+
+@media screen and (max-width: 773px) {
+  .wrapper {
+    display: block;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

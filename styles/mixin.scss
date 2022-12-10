@@ -1,0 +1,15 @@
+@import 'vars';
+
+
+@mixin text-conteiner($bgcolor) {
+    background-color: $bgcolor;    
+}
+
+
+%paddings {
+    padding: 15px;
+}
+
+%margins {
+    margin: 30px;
+}
